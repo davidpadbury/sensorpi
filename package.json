@@ -1,0 +1,19 @@
+{
+  "name": "sensorpi",
+  "version": "0.0.1",
+  "description": "Measure temperature, humidity and light from a raspberry pi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "davidpadbury/sensorpi"
+  },
+  "keywords": [
+    "raspberrypi",
+    "sensors"
+  ],
+  "author": "David Padbury <david@davidpadbury.com> (https://davidpadbury.com/)",
+  "license": "MIT"
+}
