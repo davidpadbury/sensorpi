@@ -1,0 +1,30 @@
+{
+  "kind": "Service",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "grafana"
+  },
+  "spec": {
+    "ports": [
+      {
+        "name": "grafana",
+        "port": 80,
+        "targetPort": 80
+      },
+      {
+        "name": "grafite-web",
+        "port": 81,
+        "targetPort": 81
+      },
+      {
+        "name": "grafite-line-feed",
+        "port": 2003,
+        "targetPort": 2003
+      }
+    ],
+    "selector": {
+      "app": "grafana"
+    },
+    "type": "LoadBalancer"
+  }
+}
