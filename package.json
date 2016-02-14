@@ -4,7 +4,8 @@
   "description": "Measure temperature, humidity and light from a raspberry pi",
   "main": "index.js",
   "dependencies": {
-    "i2c-bus": ">=1.0"
+    "i2c-bus": ">=1.0",
+    "node-statsd": ">=0.1.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
