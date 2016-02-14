@@ -1,0 +1,21 @@
+{
+  apps: [
+    {
+      name: "sensorpi",
+      script: "index.js",
+      env_production: {
+        NODE_ENV: "production"
+      }
+    }
+  ],
+  deploy: {
+    study: {
+      user: "pm2-deployer",
+      host: "192.168.1.44",
+      ref : "origin/master",
+      path: "/var/pm2/sensorpi",
+      repo: "git@github.com:davidpadbury/sensorpi.git",
+      "post-deploy": "pm2 startOrRestart ecosystem.json5 --env production"
+    }
+  }
+}
